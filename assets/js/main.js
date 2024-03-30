@@ -10,3 +10,10 @@ menu.addEventListener('click', ()=>{
     nav.classList.toggle('hidden')
     back.classList.toggle('back')
 })
+
+$(document).ready(function(){
+
+    var height = $(window).height();
+
+    $('#dMenu').height(height);
+});
