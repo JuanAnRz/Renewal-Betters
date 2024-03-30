@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    display: block;
+    justify-content: space-around;
+}
+nav{
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+    z-index: 2;
+    overflow: hidden;
+    border-color: rgba(105, 105, 105, 0.336);
+}
+
+.hidden{
+    overflow:visible;
+    transition: overflow .4s;
+}
+
+.logo{
+    height: 99px;
+    z-index: 9;
+    /* position: absolute; */
+    
+}
+#logo{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100vw;
+}
+#dMenu{
+    display: flex;
+    flex-direction: column;
+    /* position: fixed; */
+    z-index: 4;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    
+}
+.border{
+    border: 1px solid black;
+    width: 500px;
+    z-index: 4;
+}
+#menu{
+    border: 0;
+    width: 100px;
+    height: 100px;
+    background-color:transparent;
+    font-size: 30px;
+    /* position: absolute; */
+    /* z-index: 11; */
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#redes{
+    height: 60%;
+    display: flex; 
+    align-items: end;
+    justify-content: center;
+}
+
+#redes p{
+    height:fit-content;
+    max-height: 50px;
+    padding: 20px;
+}
+li{
+    /* position: absolute; */
+    height: 50px;
+    align-content: center;
+    padding: 20px;
+}
+
+.rotate{
+    rotate: -90deg;
+    transition: rotate .4s ; 
+    background-color: rgb(22, 20, 20);
+}
+
+#dKart{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    z-index: 4;
+    font-size: 30px;
+    flex-direction:column;
+    text-align: center;
+}
+#kart{
+    text-decoration: none;
+    align-content: center;
+    height: 100%;
+    color: black;
+}
+ 
+footer{
+    background-color: rgb(204, 204, 204);
+    height: 100px;
+    width: 100%;
+    display: flex;
+}
+
+#copy{
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.back{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 3;
+}
+main{
+    margin: 120px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: fit-content;
+}
+
+#contCard{
+    width: 100%;
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card{
+    min-width: 300px;
+    max-width: 400px;
+    height: 580px;
+    border: 1px solid rgb(189, 189, 189);
+    background-color: white;
+    border-radius:10px ;
+    margin: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card:hover{
+    box-shadow:  8px 6px 6px  rgba(32,32,32,0.3);
+    transform: scale(1.02);
+    transition:all.2s;
+}
+h2{
+    padding: 10px 20px 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    width: 100%;
+}
+
+h3{
+    padding: 0 20px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    width: 100%;
+}
+
+.Ver{
+    border: 0;
+    font-size: larger;
+    width: 360px;
+    height: 60px;
+    margin: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+}
+
+.Ver a{
+    color: white;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+}
+.menos{
+    width: 100%;
+    }
+.small{
+    width: 100px;
+}
+@media (max-width:400px) {
+    
+    .Ver{
+        
+        height: 60px;
+        width: 260px;
+        margin: 20px;
+    }
+
+    .card{
+        height: 500px;
+    }
+}
+@media (max-width:560px){
+    .logo{
+        width: 200px;
+        height: auto;
+    }
+    #logo{
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+        align-content: center;
+    }
+}
