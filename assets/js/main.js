@@ -11,9 +11,4 @@ menu.addEventListener('click', ()=>{
     back.classList.toggle('back')
 })
 
-$(document).ready(function(){
-
-    var height = $(window).height();
-
-    $('#dMenu').height(height);
-});
+let fav=[]
